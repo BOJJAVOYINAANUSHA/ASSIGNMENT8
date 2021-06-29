@@ -15,18 +15,15 @@ Original file is located at
 """
 
 import numpy as np
-A = ([[2,1],[1,1]])
+# Original matrix
+A = np.array([[2,1],[1,1]])
 print("Original matrix:")
 print(A)
 result =  np.linalg.inv(A)
 print("Inverse of the said matrix:")
 print(result)
-
-# Original matrix
-matrix1 = np.array([[2, 1], [1, 1]])
-print(matrix1)
   
 # Decomposition of the said matrix
-q, r = np.linalg.qr(matrix1)
+q, r = np.linalg.qr(A)
 print('\nQ:\n', q)
 print('\nR:\n', r)
